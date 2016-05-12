@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      input#button {
+        background-color: green;
+        border: 1px solid black;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" method="get">
+      <input id="button" type="button" value="like" onclick="myFunction1()"/>
+    </form>
+    <script>
+    var flag = true;
+      function myFunction1() {
+        if (flag) {
+          document.getElementById('button').value = "Unlike";
+          document.getElementById('button').style.backgroundColor = "red";
+          flag = false;
+        }
+        else {
+          document.getElementById('button').value = "Like";
+          document.getElementById('button').style.backgroundColor = "green";
+          flag = true;
+        }
+      }
+
+    </script>
+  </body>
+</html>
